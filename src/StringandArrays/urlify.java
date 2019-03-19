@@ -15,15 +15,25 @@ public class urlify {
 		int i=0;
 		char[] charify_temp=charify;
 		int spaceCount=0;
-		while (i<Input.length())
+		int k=0;
+		while ( k<Input.length())
 		{
-			if(charify[i]==' ')
+			if(charify[k]==' ')
 			{
 				spaceCount++;
+				k++;
+
+			}
+			else {
 				i++;
-				
+				k++;
 			}
 		}
+		System.out.println(spaceCount);
+		System.out.println(i);
+		
+		
+		
 		
 //		while( i <charify.length)
 //		{
@@ -64,7 +74,7 @@ public class urlify {
 		urlify  obj=new urlify();
 		StringBuilder inputArray=new StringBuilder();
 		 Input="Mr John Smith    ";	
-		 System.out.println("length"+Input.length());
+		 //System.out.println("length"+Input.length());
 		 System.out.println(obj.adjustString(Input, 13));
 	}
 

@@ -76,7 +76,7 @@ public class CheckPermutation {
 	public static void main(String[] args)
 	{
 		CheckPermutation obj=new CheckPermutation();
-		System.out.println("Is one string permutation of another?"+obj.isPermutation("abacdefaghga","abcdefagahga"));
+		System.out.println("Is one string permutation of another?"+obj.isPermutation("abacdefaghga","abacdefaghgak"));
 	}
 
 }
