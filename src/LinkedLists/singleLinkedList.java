@@ -1,6 +1,7 @@
 package LinkedLists;
 
-public class simpleLinkedList {
+
+public class singleLinkedList {
 	static Node head;
 	static class Node{
 		int data;
@@ -36,14 +37,20 @@ public class simpleLinkedList {
 	/* Add A Node to a LINKED LIST */
 	public  void addNode(int d) {
 		Node newNode=new Node(d);
-		newNode.next=head;
-		head=newNode;
+		if (head==null) {
+		newNode=head;
+		newNode.next=null;
+		}
+		else {
+			newNode.next=head;
+			head=newNode;
+		}
 		
 	}
 
 		
 	public static void main(String[] args) {
-		simpleLinkedList llist=new simpleLinkedList();
+		singleLinkedList llist=new singleLinkedList();
 		llist.head=new Node(1);
 		Node second=new Node(2);
 		Node third=new Node(3);
